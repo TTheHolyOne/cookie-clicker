@@ -106,12 +106,7 @@ function cookieClick() {
 
 
     // Fun Messages
-    if ( num >= 50 ) {
-        nums.innerHTML = num + " K00kiez!";
-    }
-    if ( num >= 51 ) {
-        nums.innerHTML = num + " Cookies!";
-    }
+	// none so far
 
     // Auto Upgrades
 
@@ -134,9 +129,18 @@ function cookieClick() {
     }
 
     // auto factory upgrade
+    if ( num >= 50 && cheater == false ) {
+        num += 3;
+        mul = 7;
+        upgradeLvl.innerHTML = "Fancy Factory!";
+    } else if ( num >= 50 && cheater === true ) {
+        num += 3;
+    }
+
+    // auto factory upgrade
     if ( num >= 100 && cheater == false ) {
         num += 5;
-        mul = 9;
+        mul = mul + 5;
         upgradeLvl.innerHTML = "Classic Factory!";
     } else if ( num >= 100 && cheater === true ) {
         num += 5;
@@ -145,7 +149,7 @@ function cookieClick() {
     // auto factory upgrade
     if ( num >= 500 && cheater === false ) {
         num += 10;
-        mul = 19;
+        mul = mul + 10;
         upgradeLvl.innerHTML = "Rich Factory!";
     } else if ( num >= 500 && cheater === true ) {
         num += 10;
@@ -154,7 +158,7 @@ function cookieClick() {
     // auto factory upgrade
     if ( num >= 1000 && cheater === false ) {
         num += 30;
-        mul = 49;
+        mul = mul + 30;
         upgradeLvl.innerHTML = "Powerful Factory!";
     } else if ( num >= 1000 && cheater === true ) {
         num += 30;
@@ -163,7 +167,7 @@ function cookieClick() {
     // auto factory upgrade
     if ( num >= 100000 && cheater === false ) {
         num += 1000;
-        mul = 1049;
+        mul = mul + 1000;
         upgradeLvl.innerHTML = "Ultra Factory!";
     } else if ( num >= 100000 && cheater === true ) {
         num += 1000;
@@ -284,8 +288,8 @@ if ( autoclickerbought === false && num >= 1000 ) {
         nums.innerHTML = num + " Cookies!";
         console.log( "Bought Auto Clicker.." );
         var autoclicker = document.getElementById( "autoclicker" );
-        autoclicker.innerHTML =
-            "Bought!\n‎‎‎‎‎‏‏‎\n\n\n\n\n‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ";
+		autoclicker.innerHTML =
+        "<span text-align:center;margin:0;>Bought</span>";	
         saveData();
         autoclickerbonus();
     }
@@ -293,8 +297,8 @@ if ( autoclickerbought === false && num >= 1000 ) {
     console.log( "Restarting Clicker" );
     autoclickeron = true;
     autoclickerbonus();
-    autoclicker.innerHTML =
-        "Already Bought!\n‎‎‎‎‎‏‏‎\n\n\n\n\n‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎";
+	autoclicker.innerHTML =
+        "<span text-align:center;margin:0;>Auto Clicker<br/><br/></span><span style='color: gold;font-size:18px;'>(MAXED OUT)</span>";	
     saveData();
 }
 
