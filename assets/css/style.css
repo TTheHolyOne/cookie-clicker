@@ -271,6 +271,11 @@ body {
 }
 .cheaterbutton:hover {
 	background: rgb(54, 127, 223);
+	cursor:pointer;
+}
+.cheaterbutton:active {
+	cursor:pointer;
+	background: rgb(6, 50, 107)
 }
 
 
@@ -312,6 +317,9 @@ p {
     -webkit-background-clip: text;
 }
 
+.cookie:hover {
+	cursor: pointer;
+}
 .cookie:active {
 	margin:auto;text-align:center;
 	width:195px;
