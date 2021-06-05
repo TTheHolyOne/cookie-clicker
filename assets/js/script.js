@@ -141,7 +141,34 @@ function cookieClick() {
 
 
     // Fun Messages
-	// none so far
+    var quotes = document.getElementById("quotes");
+	// I took some quotes from the Real Game
+	var myArray = [
+  	"Grandma struggled on this one..",
+  	"Woah! Grandma dropped the cookies..!",
+  	"I wonder where the chocolate is..?",
+	"Oops! Grandma slipped on the chocolate again!",
+	"Whoopsie.. Grandma slipped on the cookie dough!",
+	"Uhoh Grandma let Grandpa cook... This can't be good",
+	"Darn Grandma fell asleep again..",
+	"Uhh is Grandma dead?..",
+	"Mmm fresh cookies..",
+	"Your family wants cookies!!",
+	"Your dog ate a cookie.. darn",
+	"Fresh cookies from Grandma!",
+	"Is that a fly in the food??",
+	"She fell from hell... what??",
+	"Grandma had to wake up Grandpa..",
+	"Follow the tear-jerking, riches-to-rags story of the local cookie manufacturer who decided to give it all up!",
+	'"Explain to me again why we need particle accelerators to bake cookies?" asks misguided local woman.',
+	'"You make me sick." - Grandma',
+	'"Moist cookies" - Grandma',
+	'"Is our media controlled by the cookie industry? This could very well be the case, says crackpot conspiracy theorist."'
+	];
+
+	var quote = myArray[Math.floor(Math.random()*myArray.length)];
+
+   	quotes.innerHTML = quote;
 
     // Auto Upgrades
 
