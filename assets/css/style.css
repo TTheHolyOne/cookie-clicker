@@ -63,12 +63,12 @@ HolyClicker
 
 ::-moz-selection {
     color: red;
-	background-color: transparent;
+    background-color: transparent;
 }
 
 ::selection {
     color: red;
-	background-color: transparent;
+    background-color: transparent;
 }
 
 /* Navigation grid */
@@ -111,7 +111,7 @@ body {
     background: linear-gradient(-45deg, #97D6E7, #2870A0, #625DD1, #05042E);
     background-size: 600% 600%;
     animation: gradient 10s ease infinite;
-	overflow: hidden;
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -229,7 +229,6 @@ body {
     font-size: 25px;
     line-height: 105%;
     margin: 0;
-	
 }
 
 .instructionsub {
@@ -265,37 +264,40 @@ body {
 }
 
 /*copyright*/
+
 .copyright {
-	color: #FFFFFF;
-	position: relative;
-	text-align: center;
-	font-family: Raleway;
-	font-style: normal;
-	font-weight: lighter;
-	font-size: 20px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px #2f6627;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 20px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
 }
 
 .stats {
-    position:absolute;
-    top:10px;
+    position: absolute;
+    top: 10px;
     right: 10px;
 }
 
 .info {
-  position:absolute;
-  top:10;
-  right:15;
+    position: absolute;
+    top: 10;
+    right: 15;
 }
 
 /*cool effects ig*/
+
 p:hover {
-  color: transparent;
-  transition: 500ms ease;
+    color: transparent;
+    transition: 500ms ease;
 }
+
 p {
-  background: linear-gradient(90deg, red, blue, purple, hotpink);
-  background-clip: text;
-  -webkit-background-clip: text;
+    background: linear-gradient(90deg, red, blue, purple, hotpink);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
