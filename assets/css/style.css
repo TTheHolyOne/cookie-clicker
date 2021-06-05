@@ -311,3 +311,11 @@ p {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+.cookie:active {
+	margin:auto;text-align:center;
+	width:195px;
+	height:195px;
+  	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}

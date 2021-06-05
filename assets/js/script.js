@@ -321,6 +321,9 @@ if (confirm("Are you sure you would like to cheat?\nThis ruins in-game experienc
 
 
 
+
+
+
 // warnings and logs for console
 
 const msgCon = "Connected To: " + "https://holyclicker.ttheholyone.repl.co/";
