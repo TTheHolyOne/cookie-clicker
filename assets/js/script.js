@@ -163,7 +163,41 @@ function cookieClick() {
 	'"Explain to me again why we need particle accelerators to bake cookies?" asks misguided local woman.',
 	'"You make me sick." - Grandma',
 	'"Moist cookies" - Grandma',
-	'"Is our media controlled by the cookie industry? This could very well be the case, says crackpot conspiracy theorist."'
+	'"Is our media controlled by the cookie industry? This could very well be the case, says crackpot conspiracy theorist."',
+	"You feel like making cookies. But nobody wants to eat your cookies.",
+	"Your first batch goes in the trash. The neighborhood raccoon barely touches it.",
+	"Your family accepts to try some of your cookies.",
+	"Your cookies are popular in the neighborhood.",
+	"People are starting to talk about your cookies.",
+	"Your cookies are talked about for miles around.",
+	"Your cookies are renowned in the whole town!",
+	"Your cookies bring all the boys to the yard.",
+	"Your cookies now have their own website!",
+	"Your cookies are worth a lot of money.",
+	"Your cookies sell very well in distant countries.",
+	"People come from very far away to get a taste of your cookies.",
+	"Kings and queens from all over the world are enjoying your cookies.",
+	"There are now museums dedicated to your cookies.",
+	"A national day has been created in honor of your cookies.",
+	"Your cookies have been named a part of the world wonders.",
+	"History books now include a whole chapter about your cookies.",
+	"Your cookies have been placed under government surveillance.",
+	"The whole planet is enjoying your cookies!",
+	"Strange creatures from neighboring planets wish to try your cookies.",
+	"Elder gods from the whole cosmos have awoken to taste your cookies.",
+	"Beings from other dimensions lapse into existence just to get a taste of your cookies.",
+	"Your cookies have achieved sentience.",
+	"The universe has now turned into cookie dough, to the molecular level.",
+	"Your cookies are rewriting the fundamental laws of the universe.",
+	"A local news station runs a 10-minute segment about your cookies. Success!",
+	'"We are nice grandmas." - Grandma',
+	'"Come give grandma a kiss." - Grandma',
+	'"Indentured Servitude." - Grandma',
+	'"Why dont you visit more often?" - Grandma',
+	'"Call me..." - Grandma',
+	'"Absolutely disgusting.." - Grandma',
+	'"You make me sick.." - Grandma',
+	'"We rise." - Grandma',
 	];
 
 	var quote = myArray[Math.floor(Math.random()*myArray.length)];
@@ -227,12 +261,81 @@ function cookieClick() {
     }
 
     // auto factory upgrade
-    if ( num >= 100000 && cheater === false ) {
+    if ( num >= 10000 && cheater === false ) {
+        num += 500;
+        mul = mul + 500;
+        upgradeLvl.innerHTML = "Ultra Factory!";
+    } else if ( num >= 10000 && cheater === true ) {
+        num += 500;
+    }
+
+    // auto factory upgrade
+    if ( num >= 12500 && cheater === false ) {
+        num += 600;
+        mul = mul + 600;
+        upgradeLvl.innerHTML = "Mega Factory!";
+    } else if ( num >= 12500 && cheater === true ) {
+        num += 600;
+    }
+
+	    // auto factory upgrade
+    if ( num >= 15000 && cheater === false ) {
+        num += 750;
+        mul = mul + 750;
+        upgradeLvl.innerHTML = "Mega Mega Factory!";
+    } else if ( num >= 15000 && cheater === true ) {
+        num += 750;
+    }
+
+	    // auto factory upgrade
+    if ( num >= 20000 && cheater === false ) {
         num += 1000;
         mul = mul + 1000;
-        upgradeLvl.innerHTML = "Ultra Factory!";
-    } else if ( num >= 100000 && cheater === true ) {
+        upgradeLvl.innerHTML = "Ultra Mega Factory!";
+    } else if ( num >= 20000 && cheater === true ) {
         num += 1000;
+    }
+
+		    // auto factory upgrade
+    if ( num >= 100000 && cheater === false ) {
+        num += 5000;
+        mul = mul + 5000;
+        upgradeLvl.innerHTML = "Ultra Grandpa Factory!";
+    } else if ( num >= 100000 && cheater === true ) {
+        num += 5000;
+    }
+		    // auto factory upgrade
+    if ( num >= 150000 && cheater === false ) {
+        num += 6000;
+        mul = mul + 6000;
+        upgradeLvl.innerHTML = "Chocolate Factory!";
+    } else if ( num >= 150000 && cheater === true ) {
+        num += 6000;
+    }
+	// auto factory upgrade
+    if ( num >= 200000 && cheater === false ) {
+        num += 7500;
+        mul = mul + 7500;
+        upgradeLvl.innerHTML = "Ultra Grandma Factory!";
+    } else if ( num >= 200000 && cheater === true ) {
+        num += 7500;
+    }
+
+		    // auto factory upgrade
+    if ( num >= 250000 && cheater === false ) {
+        num += 20000;
+        mul = mul + 20000;
+        upgradeLvl.innerHTML = "Mega Grandpa Factory!";
+    } else if ( num >= 250000 && cheater === true ) {
+        num += 20000;
+    }
+			    // auto factory upgrade
+    if ( num >= 500000 && cheater === false ) {
+        num += 30000;
+        mul = mul + 30000;
+        upgradeLvl.innerHTML = "Ultra Chocolate Factory!";
+    } else if ( num >= 500000 && cheater === true ) {
+        num += 30000;
     }
 
     saveData();
