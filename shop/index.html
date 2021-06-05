@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--
 
 GITHUB.COM/TTheHolyOne
@@ -21,7 +20,7 @@ made by TTheHolyOne#1642
     <link href="https://HolyClicker.ttheholyone.repl.co/assets/images/icon.png" rel="icon" sizes="16x16" type="image/gif"><!-- Title and description ==================================-->
 
 
-    <title>HolyClicker</title>
+    <title>HolyClicker - The Shop</title>
     <meta content="HolyClicker" name="description"><!-- Social meta ============================================-->
     <meta content="HolyClicker" property="og:title">
     <meta content="article" property="og:type">
@@ -47,7 +46,7 @@ made by TTheHolyOne#1642
             <br>
 
 
-            <h1 class="title">HolyClicker</h1>
+            <h1 class="title">HolyClicker - The Shop</h1>
             <br>
             <br>
 
@@ -58,20 +57,14 @@ made by TTheHolyOne#1642
             <br>
 
 
-            <p class="instructions" style="margin:auto;text-align:center;">Instructions: Just click the cookie! ( will bake you cookies :D)</p>
+            <p class="instructions" style="margin:auto;text-align:center;">HolyClicker - Shop</p>
             <br>
             <br>
 
 
-            <p class="instructionsub" style="margin:auto;text-align:center;">Upgrades are automatic :D<br>
-            <br>
-            Game Saves Automatically...</p>
+            <p class="instructionsub" style="margin:auto;text-align:center;">The Grandma's Market..<br></p>
             <br>
             <br>
-
-
-            <div id="cookie" onclick="cookieClick();playCookie();" style="margin:auto;text-align:center;"><img src="https://HolyClicker.ttheholyone.repl.co/assets/images/cookie.png" width="200px">
-            </div>
         </div>
 
 
@@ -121,12 +114,18 @@ made by TTheHolyOne#1642
 
             <p id="clicks">
             </p>
-        </div>   
+        </div>
+        <button class="cheaterbutton" id="cheats" onclick="window.location.href='https://holyclicker.ttheholyone.repl.co/'; playCookie();" style="margin:auto;text-align:center;">Back</button>
 
-		     <button class="cheaterbutton" id="cheats" onclick="window.location.href='https://holyclicker.ttheholyone.repl.co/shop'; playCookie();" style="margin:auto;text-align:center;">Shop</button>
-        <button class="cheaterbutton" id="cheats" onclick="cookieCheats();playCookie();" style="margin:auto;text-align:center;">Cheats</button> <button class="cheaterbutton" id="cheats" onclick=
-        "resetStorage();playCookie();" style="margin:auto;text-align:center;">Reset Save Data</button> <button class="cheaterbutton" id="cheats" onclick="saveData();playCookie();" style=
-        "margin:auto;text-align:center;">Load/Save Data</button>
+        <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
+                <button class="cheaterbutton" id="autoclicker" onclick="buyAutoClicker();saveData();playCookie();" style="margin:auto;text-align:center;">Buy Auto Clicker<br/><p style="color:gold;">(1000 COOKIES)</p></button>
+                <br/>
+
+            </div>
+        </div>
+
+        <button class="cheaterbutton" id="cheats" onclick="saveData();playCookie();" style="margin:auto;text-align:center;">Load/Save Data</button>
     </div>
     <a class="copyright" style="position: fixed; bottom: 0; width:100%;">&copy; 2021 HolyClicker Org. All Rights Reserved.</a>
 </body>

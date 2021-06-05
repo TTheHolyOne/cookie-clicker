@@ -3,8 +3,7 @@
 // Javascript is very messy ( I am learning javascript and was in a rush )
 // Fun project!
 // github.com/ttheholyone
-
-let num, click, mul, username, cheater;
+let num, click, mul, username, cheater, autoclickeron, autoclickerbought;
 if ( localStorage.getItem( 'data' ) ) {
     let loadedData = JSON.parse( localStorage.getItem( 'data' ) );
     ( {
@@ -13,9 +12,14 @@ if ( localStorage.getItem( 'data' ) ) {
         , mul
         , username
         , cheater
+		, autoclickerbought
+		, autoclickeron
     } = loadedData );
 } else {
     [ num, click, mul ] = [ 0, 0, 1 ];
+	cheater = false;
+	autoclickerbought = false;
+	autoclickeron = false;
 }
 
 
@@ -43,7 +47,6 @@ window.onload = function() {
     if ( cheater === true ) {
         upgradeLvl.innerHTML = "Cheater's Factory!";
     } else if ( cheater === false ) {
-
         upgradeLvl.innerHTML = "Building Factory!";
     }
 
@@ -51,6 +54,18 @@ window.onload = function() {
         username = prompt( "What is your username?" );
         saveData();
     }
+	if (username === null ) {
+		username = "Holy";
+		saveData();
+	}
+	if (username === " " ) {
+		username = "space";
+		saveData();
+	}
+	if (username === ""){
+		username = "blank";
+		saveData();
+	}
 
     var space = document.getElementById( "space" );
 
@@ -58,6 +73,7 @@ window.onload = function() {
 }
 
 function cookieClick() {
+	console.log("Clicked Cookie!");
     num += 1;
     click += 1;
 
@@ -191,9 +207,33 @@ function cookieCheats() {
 
 function resetStorage() {
     [ num, click, mul ] = [ 0, 0, 1 ];
+	cheater = false;
+	autoclickeron = false;
+	autoclickerbought = false;
     localStorage.clear();
-    // clicks updater
 
+
+	// username stuff
+    username = prompt( "What is your username?" );
+    saveData();
+
+	if (username === null ) {
+		username = "Holy";
+		saveData();
+	}
+	if (username === " " ) {
+		username = "space";
+		saveData();
+	}
+	if (username === ""){
+		username = "blank";
+		saveData();
+	}
+    space.innerHTML = username + "'s Factory";
+
+
+
+    // clicks updater
     clicks.innerHTML = click + " Clicks!";
 
     // default updater for num of cookies
@@ -203,6 +243,8 @@ function resetStorage() {
     muls.innerHTML = mul + "x Multiplyer!";
 
     upgradeLvl.innerHTML = "Building Factory!";
+
+	saveData();
 }
 
 function saveData() {
@@ -212,6 +254,48 @@ function saveData() {
         , 'mul': mul
         , 'username': username
         , 'cheater': cheater
+		, 'autoclickerbought': autoclickerbought
+		, 'autoclickeron': autoclickeron
     };
     localStorage.setItem( 'data', JSON.stringify( userData ) );
 }
+
+// shop options
+
+
+
+if (autoclickerbought === false && num >= 1000){
+function buyAutoClicker() {
+	autoclickerbought = true;
+	autoclickeron = true;
+	num -= 1000;
+	nums.innerHTML = num + " Cookies!";
+	console.log("Bought Auto Clicker..");
+	var autoclicker = document.getElementById( "autoclicker" );
+	autoclicker.innerHTML = "Bought!\n‎‎‎‎‎‏‏‎\n\n\n\n\n‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ";
+	saveData();
+	autoclickerbonus();
+}
+}
+else if (autoclickerbought === true){
+	console.log("Restarting Clicker");
+	autoclickeron = true;
+	autoclickerbonus();
+	autoclicker.innerHTML = "Already Bought!\n‎‎‎‎‎‏‏‎\n\n\n\n\n‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎";
+	saveData();
+}
+
+function autoclickerbonus() {
+	if (autoclickeron === true){
+	console.log("AutoClick!")
+    cookieClick();
+	nums.innerHTML = num + " Cookies!";
+	saveData();
+    setTimeout(autoclickerbonus, 2500);
+	}
+	else if (autoclickeron === false){
+		console.log("Sorry cant do that!")
+	}
+}
+
+

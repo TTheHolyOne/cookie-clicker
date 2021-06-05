@@ -155,7 +155,7 @@ body {
     color: white;
     background: purple;
     border-color: #05042E;
-    border: 5px dashed;
+    border: 5px solid;
     border-radius: 10px;
     font-family: fantasy;
     width: 389px;
@@ -269,6 +269,10 @@ body {
     width: 200px;
     height: 50px;
 }
+.cheaterbutton:hover {
+	background: rgb(54, 127, 223);
+}
+
 
 /*copyright*/
 
