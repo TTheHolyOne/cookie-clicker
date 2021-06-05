@@ -298,4 +298,8 @@ function autoclickerbonus() {
 	}
 }
 
-
+function resetPrompt(){
+if (confirm("Are you sure you would like to reset?")) {
+	resetStorage();
+}
+}
