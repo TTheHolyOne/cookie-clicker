@@ -12,7 +12,7 @@ if ( localStorage.getItem( 'data' ) ) {
         , click
         , mul
         , username
-		, cheater
+        , cheater
     } = loadedData );
 } else {
     [ num, click, mul ] = [ 0, 0, 1 ];
@@ -39,14 +39,13 @@ window.onload = function() {
 
     // mul updater
     muls.innerHTML = mul + "x Multiplyer!";
-	upgradeLvl.innerHTML = "Building Factory!";
-	if ( cheater === true){
-		upgradeLvl.innerHTML = "Cheater's Factory!";
-	}
-	else if ( cheater === false){
-
     upgradeLvl.innerHTML = "Building Factory!";
-	}
+    if ( cheater === true ) {
+        upgradeLvl.innerHTML = "Cheater's Factory!";
+    } else if ( cheater === false ) {
+
+        upgradeLvl.innerHTML = "Building Factory!";
+    }
 
     if ( username === undefined ) {
         username = prompt( "What is your username?" );
@@ -212,7 +211,7 @@ function saveData() {
         , 'click': click
         , 'mul': mul
         , 'username': username
-		, 'cheater': cheater
+        , 'cheater': cheater
     };
     localStorage.setItem( 'data', JSON.stringify( userData ) );
 }
