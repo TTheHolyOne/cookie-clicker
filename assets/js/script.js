@@ -539,6 +539,12 @@ function cheatPrompt() {
 const msgCon = "Connected To: " + "https://holyclicker.ttheholyone.repl.co/";
 const msgScan = "Loading Data";
 const msgData = "\n\nCookies: " + num + "\n\nMultiplyer: " + mul + "\n\nClicks: " + click;
+console.log("[=== Remember : cheated cookies taste awful! ===]");
+console.log("[=== Remember : cheated cookies taste awful! ===]");
+console.log("[=== Remember : cheated cookies taste awful! ===]");
+console.log("[=== Remember : cheated cookies taste awful! ===]");
+console.log("[=== Remember : cheated cookies taste awful! ===]");
+console.log("[=== cheated cookies taste awful! ===]\n[=== Let's not cheat! Enjoy the game! ===]");
 console.log( '%c HOLD UP!!', 'font-weight: bold; font-size: 100px;color: red;' );
 console.log( '%c If someone told you to paste something here there is a 11/10 chance that you are being scammed..\nOr you are trying to do some custom javascript code :D Have fun!'
     , 'font-weight: bold; font-size: 20px;color: darkred;' );
