@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!-- Basic Page Needs =======================================-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://HolyClicker.ttheholyone.repl.co/assets/images/icon.png" rel="icon" sizes="16x16" type="image/gif"><!-- Title and description ==================================-->
+
+
+    <title>HolyClicker</title>
+    <meta content="HolyClicker" name="description"><!-- Social meta ============================================-->
+    <meta content="HolyClicker" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="HolyClicker" property="og:url">
+    <meta content="https://HolyClicker.ttheholyone.repl.coassets/images/holy.gif" property="og:image">
+    <meta content="HolyClicker" property="og:description">
+    <meta content="@TTheHolyOne1" name="twitter:site">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description"><!-- Helpers ================================================== -->
+    <link href="https://HolyClicker.ttheholyone.repl.co" rel="canonical">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#ee0606" name="theme-color"><!-- CSS =======================================================-->
+    <link href="https://HolyClicker.ttheholyone.repl.co/assets/css/style.css" rel="stylesheet"><!-- JS ========================================================-->
+
+    <script defer src="https://holyclicker.ttheholyone.repl.co/assets/js/script.js">
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content" role="main">
+            <br>
+
+
+            <h1 class="title">HolyClicker</h1>
+            <br>
+            <br>
+
+
+            <div id="space">
+            </div>
+            <br>
+            <br>
+
+
+            <p class="instructions" style="margin:auto;text-align:center;">Instructions: Just click the cookie! ( will bake you cookies :D)</p>
+            <br>
+            <br>
+
+
+            <p class="instructionsub" style="margin:auto;text-align:center;">Upgrades are automatic :D<br/><br/>Game Saves Automatically...</p>
+            <br>
+            <br>
+
+
+            <div id="cookie" onclick="cookieClick();playCookie();" style="margin:auto;text-align:center;"><img src="https://HolyClicker.ttheholyone.repl.co/assets/images/cookie.png" width="200px">
+            </div>
+        </div>
+
+
+        <div class="info">
+            <p class="instructionsubsub" style="margin: auto;text-align:center;">Factory Stats:</p>
+            <br>
+
+
+            <p class="instructionsub" style="margin: auto;text-align:center;">Upgrade Level:</p>
+            <br>
+            <br>
+
+
+            <p id="upgradeLvl">
+            </p>
+
+
+            <p class="instructionsub" style="margin: auto;text-align:center;">Multiplyer:</p>
+            <br>
+            <br>
+
+
+            <p id="muls">
+            </p>
+        </div>
+        <br>
+
+
+        <div class="stats">
+            <p class="instructionsubsub" style="margin: auto;text-align:center;">Player Stats:</p>
+            <br>
+
+
+            <p class="instructionsub" style="margin: auto;text-align:center;">Number of Cookies:</p>
+            <br>
+            <br>
+
+
+            <p id="nums">
+            </p>
+            <br>
+
+
+            <p class="instructionsub" style="margin: auto;text-align:center;">Clicks:</p>
+            <br>
+
+
+            <p id="clicks">
+            </p>
+        </div>
+        <button class="cheaterbutton" id="cheats" onclick="cookieCheats();playCookie();" style="margin:auto;text-align:center;">Cheats</button> <button class="cheaterbutton" id="cheats" onclick=
+        "resetStorage();playCookie();" style="margin:auto;text-align:center;">Reset Save Data</button>
+		<button class="cheaterbutton" id="cheats" onclick=
+        "saveData();playCookie();" style="margin:auto;text-align:center;">Load/Save Data</button>
+    </div>
+    <a class="copyright" style="position: fixed; bottom: 0; width:100%;">&copy; 2021 HolyClicker Org. All Rights Reserved.</a>
+</body>
+</html>
