@@ -5,9 +5,12 @@ HolyClicker - A remake of cookie clicker made in HTML, CSS, JS
 
 
 <br/>
+
+
 ## Developers
 ```
 ```
+
 
 
 <br/>
