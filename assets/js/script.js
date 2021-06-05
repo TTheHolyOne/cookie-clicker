@@ -19,12 +19,11 @@ if ( localStorage.getItem( 'data' ) ) {
     } = loadedData );
 } else {
     [ num, click, mul ] = [ 0, 0, 1 ];
+	allupgrades = "upgrade";
     cheater = false;
     autoclickerbought = false;
     autoclickeron = false;
 }
-
-
 
 // When user goes onto the website this code loads
 window.onload = function() {
@@ -74,7 +73,26 @@ window.onload = function() {
     var space = document.getElementById( "space" );
 
     space.innerHTML = username + "'s Factory";
+	
+	autoupgrade = "Auto Clicker | Not Bought"
+	if (autoclickerbought === true) {
+		var autoupgrade = "Auto Clicker | Bought";
+	}
+	else if (autoclickerbought === false) {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
+	else {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
+
+	var comingsoon = "Coming Soon.. | Not Bought"
+
+	var allupgrades = "<br/>All Upgrades:<br/><br/>"+autoupgrade+"<br/><br/>"+comingsoon+"<br/><br/>"+comingsoon+"<br/><br/>";
+	var upgrades = document.getElementById( "upgrades" );
+
+	upgrades.innerHTML = allupgrades;
 }
+
 
 function cookieClick() {
     console.log( "Clicked Cookie!\n\nYou now have:\n\n"+num+" Cookies and " + click +" Clicks");
@@ -91,6 +109,9 @@ function cookieClick() {
 
     var clicks = document.getElementById( "clicks" );
 
+	// upgrades 
+
+
     // clicks updater
 
     clicks.innerHTML = click + " Clicks!";
@@ -100,9 +121,23 @@ function cookieClick() {
 
     // mul updater
     muls.innerHTML = mul + "x Multiplyer!";
+		autoupgrade = "Auto Clicker | Not Bought"
+		if (autoclickerbought === true) {
+		var autoupgrade = "Auto Clicker | Bought";
+	}
+	else if (autoclickerbought === false) {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
+	else {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
 
+	var comingsoon = "Coming Soon.. | Not Bought"
 
+	var allupgrades = "<br/>All Upgrades:<br/><br/>"+autoupgrade+"<br/><br/>"+comingsoon+"<br/><br/>"+comingsoon+"<br/><br/>";
+	var upgrades = document.getElementById( "upgrades" );
 
+	upgrades.innerHTML = allupgrades;
 
 
     // Fun Messages
@@ -258,6 +293,22 @@ function resetStorage() {
 
     upgradeLvl.innerHTML = "Building Factory!";
 
+			if (autoclickerbought === true) {
+		var autoupgrade = "Auto Clicker | Bought";
+	}
+	else if (autoclickerbought === false) {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
+	else {
+		var autoupgrade = "Auto Clicker | Not Bought"
+	}
+
+	var comingsoon = "Coming Soon.. | Not Bought"
+
+	var allupgrades = "<br/>All Upgrades:<br/><br/>"+autoupgrade+"<br/><br/>"+comingsoon+"<br/><br/>"+comingsoon+"<br/><br/>";
+	var upgrades = document.getElementById( "upgrades" );
+
+	upgrades.innerHTML = allupgrades;
     saveData();
 }
 

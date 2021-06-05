@@ -228,6 +228,19 @@ body {
     height: 60px;
 }
 
+#upgrades {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background: rgb(51, 48, 226);
+    border-color: #05042E;
+    border: 5px solid;
+    border-radius: 10px;
+    font-family: fantasy;
+    width: 400px;
+    height: 350px;
+}
+
 .instructions {
     color: #FFFFFF;
     font-family: Raleway;
