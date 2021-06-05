@@ -51,7 +51,7 @@ window.onload = function() {
     }
 
     if ( username === undefined ) {
-        username = prompt( "What is your username?" );
+        username = prompt( "New Username:" );
         saveData();
     }
 	if (username === null ) {
@@ -214,7 +214,7 @@ function resetStorage() {
 
 
 	// username stuff
-    username = prompt( "What is your username?" );
+    username = prompt( "New Username:" );
     saveData();
 
 	if (username === null ) {
@@ -299,11 +299,25 @@ function autoclickerbonus() {
 }
 
 function resetPrompt(){
-if (confirm("Are you sure you would like to reset?")) {
-	resetStorage();
+if (confirm("Are you really sure you would like to reset?\n\nYou will lose all progress with no chance of getting it back..")) {
+	oneMoreTimee();
 }
 }
-
+function oneMoreTimee(){
+	if (confirm("Are you really sure you want to reset ALL your progress?")) {
+		resetStorage();
+	}
+}
+function oneMoreTime(){
+	if (confirm("Are you really sure?")) {
+		cookieCheats();
+	}
+}
+function cheatPrompt(){
+if (confirm("Are you sure you would like to cheat?\nThis ruins in-game experience and you can not revert it")) {
+	oneMoreTime();
+}
+}
 
 
 
