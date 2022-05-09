@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--
 
 GITHUB.COM/TTheHolyOne
@@ -14,120 +15,118 @@ made by TTheHolyOne#1642
 
 <html lang="en">
 <head>
-	<!-- Basic Page Needs =======================================-->
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="https://HolyClicker.ttheholyone.repl.co/assets/images/icon.png" rel="icon" sizes="16x16" type="image/gif"><!-- Title and description ==================================-->
 
 
+    <!-- Basic Page Needs =======================================-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://HolyClicker.ttheholyone.repl.co/assets/images/icon.png" rel="icon" sizes="16x16" type="image/gif"><!-- Title and description ==================================-->
 	<title>HolyClicker - Cookie Clicker Remake</title>
-	<meta content="HolyClicker" name="description"><!-- Social meta ============================================-->
-	<meta content="HolyClicker" property="og:title">
-	<meta content="article" property="og:type">
-	<meta content="HolyClicker" property="og:url">
-	<meta content="https://HolyClicker.ttheholyone.repl.coassets/images/holy.gif" property="og:image">
-	<meta content="HolyClicker" property="og:description">
-	<meta content="@TTheHolyOne1" name="twitter:site">
-	<meta content="summary_large_image" name="twitter:card">
-	<meta content="" name="twitter:title">
-	<meta content="" name="twitter:description"><!-- Helpers ================================================== -->
-	<link href="https://HolyClicker.ttheholyone.repl.co" rel="canonical">
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta content="#ee0606" name="theme-color"><!-- CSS =======================================================-->
-	<link href="https://HolyClicker.ttheholyone.repl.co/assets/css/style.css" rel="stylesheet"><!-- JS ========================================================-->
+    <meta content="HolyClicker" name="description"><!-- Social meta ============================================-->
+    <meta content="HolyClicker" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="HolyClicker" property="og:url">
+    <meta content="https://HolyClicker.ttheholyone.repl.coassets/images/holy.gif" property="og:image">
+    <meta content="HolyClicker" property="og:description">
+    <meta content="@TTheHolyOne1" name="twitter:site">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description"><!-- Helpers ================================================== -->
+    <link href="https://HolyClicker.ttheholyone.repl.co" rel="canonical">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="#ee0606" name="theme-color"><!-- CSS =======================================================-->
+    <link href="https://cookie-clicker.ttheholyone.repl.co/assets/css/style.css" rel="stylesheet"><!-- JS ========================================================-->
 
-	<script defer src="https://holyclicker.ttheholyone.repl.co/assets/js/script.js">
-	   console.log("script.js loaded");
-	</script>
+    <script defer src="https://cookie-clicker.ttheholyone.repl.co/assets/js/script.js">
+	console.log("script.js loaded");
+    </script>
 </head>
 
 <body onload="zoom()">
-	<div class="wrapper">
-		<div class="content" role="main">
-			<br>
+    <div class="wrapper">
+        <div class="content" role="main">
+            <br>
 
 
-			<h1 class="title">HolyClicker</h1>
-			<br>
-			<br>
+            <h1 class="title">HolyClicker</h1>
+            <br>
+            <br>
 
 
-			<div id="space">
-			</div>
-			<br>
-			<br>
+            <div id="space">
+            </div>
+            <br>
+            <br>
+            <p class="instructionsub" style="margin:auto;text-align:center;" id="quotes">You can do this!<br>
+            </p>
+		<br/>
+            <div id="cookie" onclick="cookieClick();playCookie();" style="margin:auto;text-align:center;" class="cookie"><img src="https://HolyClicker.ttheholyone.repl.co/assets/images/cookie.png" width="200px">
+            </div>
+        </div>
 
 
-			<p class="instructionsub" id="quotes" style="margin:auto;text-align:center;">You can do this!<br></p>
-			<br>
+        <div class="info">
+            <p class="instructionsubsub" style="margin: auto;text-align:center;">Factory Stats:</p>
+            <br>
 
 
-			<div class="cookie" id="cookie" onclick="cookieClick();playCookie();" style="margin:auto;text-align:center;"><img src="https://HolyClicker.ttheholyone.repl.co/assets/images/cookie.png" width="200px">
-			</div>
-		</div>
+            <p class="instructionsub" style="margin: auto;text-align:center;">Upgrade Level:</p>
+            <br>
+            <br>
 
 
-		<div class="info">
-			<p class="instructionsubsub" style="margin: auto;text-align:center;">Factory Stats:</p>
-			<br>
+            <p id="upgradeLvl">
+            </p>
 
 
-			<p class="instructionsub" style="margin: auto;text-align:center;">Upgrade Level:</p>
-			<br>
-			<br>
+            <p class="instructionsub" style="margin: auto;text-align:center;">Multiplyer:</p>
+            <br>
+            <br>
 
 
-			<p id="upgradeLvl">
-			</p>
+            <p id="muls">
+            </p>
+
+			            <p class="instructionsub" style="margin: auto;text-align:center;">Upgrades:</p>
+            <br>
+            <br>
 
 
-			<p class="instructionsub" style="margin: auto;text-align:center;">Multiplyer:</p>
-			<br>
-			<br>
+            <p id="upgrades">
+            </p>
+        </div>
+        <br>
 
 
-			<p id="muls">
-			</p>
+        <div class="stats">
+            <p class="instructionsubsub" style="margin: auto;text-align:center;">Player Stats:</p>
+            <br>
 
 
-			<p class="instructionsub" style="margin: auto;text-align:center;">Upgrades:</p>
-			<br>
-			<br>
+            <p class="instructionsub" style="margin: auto;text-align:center;">Number of Cookies:</p>
+            <br>
+            <br>
 
 
-			<p id="upgrades">
-			</p>
-		</div>
-		<br>
+            <p id="nums">
+            </p>
+            <br>
 
 
-		<div class="stats">
-			<p class="instructionsubsub" style="margin: auto;text-align:center;">Player Stats:</p>
-			<br>
+            <p class="instructionsub" style="margin: auto;text-align:center;">Clicks:</p>
+            <br>
 
 
-			<p class="instructionsub" style="margin: auto;text-align:center;">Number of Cookies:</p>
-			<br>
-			<br>
+            <p id="clicks">
+            </p>
+        </div>   
 
-
-			<p id="nums">
-			</p>
-			<br>
-
-
-			<p class="instructionsub" style="margin: auto;text-align:center;">Clicks:</p>
-			<br>
-
-
-			<p id="clicks">
-			</p>
-		</div>
-		<button class="cheaterbutton" id="cheats" onclick="window.location.href='https://holyclicker.ttheholyone.repl.co/shop';playCookie();" style="margin:auto;text-align:center;">Shop</button><br>
-		<button class="cheaterbutton" id="cheats" onclick="window.location.href='https://holyclicker.ttheholyone.repl.co/about';playCookie();" style="margin:auto;text-align:center;">About/Help</button><br>
-		<button class="cheaterbutton" id="reset" onclick="resetPrompt();playCookie();" style="margin:auto;text-align:center;">Reset Save Data</button><br>
-		<button class="cheaterbutton" id="cheats" onclick="saveData();playCookie();" style="margin:auto;text-align:center;">Load/Save Data</button>
-	</div>
-	<a class="copyright" style="color: white; position: fixed; bottom: 0; width:100%;">&copy; 2021 HolyClicker Org. All Rights Reserved.</a><a class="copyright" href="https://github.com/TTheHolyOne/cookie-clicker" style="color: white; position: fixed; bottom: 30px; width:100%;">Source Code</a>
+		     <button class="cheaterbutton" id="cheats" onclick="window.location.href='/shop';playCookie();" style="margin:auto;text-align:center;">Shop</button><br/>
+		     <button class="cheaterbutton" id="cheats" onclick="window.location.href='/about';playCookie();" style="margin:auto;text-align:center;">About/Help</button><br/>
+		<button class="cheaterbutton" id="reset" onclick=
+        "resetPrompt();playCookie();" style="margin:auto;text-align:center;">Reset Save Data</button><br/> <button class="cheaterbutton" id="cheats" onclick="saveData();playCookie();" style=
+        "margin:auto;text-align:center;">Load/Save Data</button>
+    </div>
+    <a class="copyright" style="color: white; position: fixed; bottom: 0; width:100%;">&copy; 2021 HolyClicker Org. All Rights Reserved.<a class="copyright"style="color: white; position: fixed; bottom: 30px; width:100%;"href="https://github.com/TTheHolyOne/cookie-clicker">Source Code</a></a>
 </body>
 </html>
